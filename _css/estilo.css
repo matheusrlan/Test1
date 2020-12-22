@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.links{
+width: 100%;
+height: 50px;
+position: fixed;
+display: flex;
+}
+
+.links label{
+padding: 10px 0;
+flex-grow: 1;
+cursor: pointer;
+transition: all .4s;
+text-align: center;
+font-family: 'Arial';
+font-size: 100%;
+color: #fff;
+}
+
+.links label:hover {
+background-color: rgba(255,255,255,.2);
+}
+
+.scroll{
+display: flex;
+width: 100vw;
+height: 100vh;
+overflow: hidden;
+}
+
+.sections{
+
+transition:  all .4s;
+}
+
+input{
+display: none;
+}
+.bloco{
+width: 100vw;
+height: 100vh;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
+#matheus{
+background-color: #7fbd42;
+}
+
+#html-css{
+background-color: #69f;
+}
+
+#python{
+background-color: #aaa;
+}
+
+#git-link{
+background-color: #414950;
+}
+
+#rd_html-css:checked ~ .sections{
+margin-top: -100vh;
+}
+
+#rd_python:checked ~ .sections{
+margin-top: -200vh;
+}
+
+#rd_git-link:checked ~ .sections{
+margin-top: -300vh;
+}
+
+.bloco img{
+width: 40%;
+}
+
